@@ -25,8 +25,8 @@ describe('zodiac tests', () => {
 });
 
 describe('horoscope tests', () => {
-  it('horoscopes/:sign should return horoscope', async () => {
-    const resp = await request(app).get('/horoscopes/scorpio');
+  it('horoscope/:sign should return horoscope', async () => {
+    const resp = await request(app).get('/horoscope/scorpio');
     const scorpio = {
       'sign': 'scorpio',
       'date': '2022-11-01',
